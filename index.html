@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body style="padding: 50px;">
+
+  <!-- <h1>Customize Tooltip</h1> -->
+
+  <div class="main_container" style="display: flex;">
+    <div class="form">
+      <form>
+        <label for="target">Target Element:</label>
+        <select id="target" name="target" style="width: 39.6vw; height: 32px;">
+          <option value="button1">Button 1</option>
+          <option value="button2">Button 2</option>
+          <option value="button3" selected>Button 3</option>
+          <option value="button4">Button 4</option>
+          <option value="button5">Button 5</option>
+        </select>
+
+        <label for="text">Tooltip Text</label>
+        <input type="text" id="text" name="text" placeholder="Input" style="width: 39.4vw; height: 25px;">
+
+        <div style="display: flex; justify-content: space-between;">
+          <div>
+            <label for="size">Text Size</label>
+            <input type="number" id="size" name="size" value="12" min="0" style="width: 18vw; height: 25px;">
+          </div>
+          <div>
+            <label for="padding">Padding</label>
+            <input type="number" id="padding" name="padding" value="1" min="0" style="width: 18vw; height: 25px; ">
+          </div>
+        </div>
+        
+
+        <label for="textcolor">Text Color</label>
+        <input type="color" id="textcolor" name="textcolor" value="" style="width: 39.4vw; height: 25px;">
+
+        <label for="bgcolor">Background Color</label>
+        <input type="color" id="bgcolor" name="bgcolor" value="#ffffff" style="width: 39.4vw; height: 25px;">
+
+        
+        
+        <div style="display: flex; justify-content: space-between;">
+          <div>
+            <label for="radius">Corner Radius</label>
+            <input type="number" id="radius" name="radius" value="10" min="0" style="width: 18vw; height: 25px;">
+          </div>
+          <div>
+            <label for="width">Tooltip Width</label>
+            <input type="number" id="width" name="width" value="120" min="0"  style="width: 18vw; height: 25px;">
+          </div>
+        </div>
+        
+        <div style="display: flex; justify-content: space-between;">
+          <div>
+            <label for="arrowwidth">Arrow Width</label>
+            <input type="number" id="arrowwidth" name="arrowwidth" value="10"  min="0" style="width: 18vw; height: 25px;">
+          </div>
+          <div>
+            <label for="arrowheight">Arrow Height</label>
+            <input type="number" id="arrowheight" name="arrowheight" value="10"  min="0" style="width: 18vw; height: 25px;">
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center;  margin-top: 20px;">
+          <input type="submit" class="submit-btn">
+        </div>
+
+      </form>
+    </div>
+    <div class="phone">
+      <div class="display">
+        <div class="button1 btn top-left tooltip" >
+          <h1>Button 1</h1>
+          <span class="tooltiptext tooltip">Tooltip for Button 1</span>
+          <div style="position: absolute; width: 20px;"></div>
+        </div>
+        <div class="button2 btn top-right tooltip" >
+          <h1>Button 2</h1>
+          <span class="tooltiptext tooltip">Tooltip for Button 2</span>
+          <div style="position: absolute; width: 20px;"></div>
+        </div>        
+        <div class="button3 btn tooltip" style="bottom:-200px; left: 90px;" >
+          <h1>Button 3</h1>
+          <span class="tooltiptext tooltip">Tooltip for Button 3</span>
+          <div style="position: absolute; width: 20px;"></div>
+        </div>
+        <div class="button4 btn bottom-left tooltip"  style="position: absolute; bottom: 20px; left: 20px;">
+          <h1>Button 4</h1>
+          <span class="tooltiptext tooltip">Tooltip for Button 4</span>
+          <div style="position: absolute; width: 20px;"></div>
+        </div>
+        <div class="button5 btn bottom-right tooltip"  style="position: absolute; bottom: 20px; right: 20px;">
+          <h1>Button 5</h1>
+          <span class="tooltiptext tooltip">Tooltip for Button 5</span>
+          <div style="position: absolute; width: 20px;"></div>
+        </div>
+      </div>
+      
+
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>

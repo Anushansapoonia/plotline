@@ -1,0 +1,153 @@
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  width: 200px;
+}
+
+/* This is the style for the select element */
+select {
+  width: 200px;
+}
+
+/* This is the style for the button elements */
+button {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: none;
+  background-color: gray;
+  color: white;
+}
+
+/* This is the style for the mobile phone screen on the right */
+.phone {
+  height: fit-content;
+  width: 40vw;
+  padding: 20px;
+  margin-left: 100px;
+  margin-top: -20px;
+}
+
+.form {
+  height: fit-content;
+  width: 40vw;
+  border: 0px solid black;
+  background-color: rgb(245, 245, 245);
+  border-radius: 20px;
+  padding: 20px;
+
+}
+
+.display {
+  background-color: rgb(184, 184, 184);
+  border: 10px solid black;
+  border-width: 18px 11px 18px 11px;
+  border-radius: 30px;
+  padding: 20px;
+  height: 600px;
+  width: 350px;
+  position: absolute;
+
+}
+
+.btn {
+  background-color: white;
+  height: fit-content;
+  width: 120px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  align-items: center;
+  padding-left: 25px;
+  /* padding-top: -1000px; */
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+  /* background-color: #555; */
+}
+
+.top-right {
+  top: 10px;
+  right: -50px;
+  /* background-color: #555; */
+}
+
+.bottom-left {
+  bottom: -500px;
+  left: -140px;
+  /* background-color: #555; */
+}
+
+.bottom-right {
+  bottom: -450px;
+  right: -200px;
+  /* background-color: #555; */
+}
+
+label {
+  font-weight: bolder;
+}
+
+.submit-btn {
+  font-weight: bolder;
+  border-radius: 30px;
+  width: fit-content;
+}
+
+.submit-btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tooltip::after {
+  border-color: transparent transparent #000000 transparent;
+
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Tooltip Text */
+.tooltip .tooltiptext {
+  /* display: none; */
+  visibility: hidden;
+  width: 120px;
+  background-color: #212121;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show Tooltip on Hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
